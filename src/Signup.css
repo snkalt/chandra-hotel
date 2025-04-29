@@ -1,0 +1,87 @@
+/* Signup.css */
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65vh; /* reduced from 70vh */
+    padding-top: 20px;
+    padding-bottom: 60px; /* added space at the bottom */
+  }
+  
+
+  .signup-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px; /* medium width: not too big, not too slim */
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .signup-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 28px; /* 👈 added this */
+    font-weight: bold; /* 👈 makes it look nicer */
+  }
+  
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .gender-selection {
+    display: flex;
+    justify-content: space-around; /* horizontal layout */
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .gender-selection label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .gender-selection input {
+    margin-right: 5px;
+  }
+  
+  .signup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signup-form button:hover {
+    background-color: #e65c00;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  

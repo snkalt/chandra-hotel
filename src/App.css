@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
   min-height: 100vh;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: rgba(0, 32, 63, 0.9);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Nav Buttons */
+.nav-buttons {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-buttons button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: white;
+  color: #00203f;
+  transform: translateY(-2px);
+}
+
+/* Main Content */
+.main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 80px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Booking Form */
+.booking-form {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  transition: transform 0.3s ease;
+}
+
+.booking-form:hover {
+  transform: translateY(-10px);
+}
+
+.booking-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.booking-form input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: calc(100% - 22px);
+  font-size: 16px;
+}
+
+.booking-form button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #00203f;
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.booking-form button:hover {
+  background-color: #004080;
+  transform: translateY(-2px);
 }
 
-@keyframes App-logo-spin {
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+  background-color: rgba(0, 32, 63, 0.9);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-buttons {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .booking-form {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(20px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+
+.form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.gender-section {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.gender-options label {
+  margin-right: 10px;
 }

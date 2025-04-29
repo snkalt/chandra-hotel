@@ -1,0 +1,76 @@
+/* Login.css */
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+  }
+  
+  .login-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    width: 380px; /* Increased width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: -20px; /* Adjusted to move the form slightly upwards */
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px; /* Made the login text slightly bigger */
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px; /* Increased padding for larger input fields */
+    margin: 12px 0; /* Increased margin for better spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px; /* Increased padding for better button size */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #218838;
+  }
+  
+  .forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+  
